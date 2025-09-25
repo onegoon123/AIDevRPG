@@ -1,0 +1,5 @@
+FloorNumber,ExperienceReward,GoldReward,ItemName,ItemCount,DropChance
+1,50,25,체력 포션,2,0.8
+1,50,25,마나 포션,1,0.6
+2,100,50,철 검,1,0.7
+3,200,100,마법 반지,1,0.5

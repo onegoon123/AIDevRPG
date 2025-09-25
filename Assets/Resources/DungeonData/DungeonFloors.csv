@@ -1,0 +1,4 @@
+FloorNumber,FloorName,FloorDescription,IsBossFloor,BossName
+1,시작의 동굴,초보자를 위한 안전한 동굴,False,
+2,고블린 소굴,작은 고블린들이 서식하는 곳,False,
+3,오크 요새,강력한 오크들이 지키는 요새,True,오크 대장
