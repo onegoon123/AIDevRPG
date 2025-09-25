@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System;
 
 /// <summary>
 /// 적 캐릭터 클래스
@@ -9,6 +10,7 @@ public class EnemyCharacter : Character
 {
     [Header("적 특화 속성")]
     [SerializeField] private EnemyType enemyType = EnemyType.Normal;
+    [SerializeField] private int enemyLevel = 1;
     [SerializeField] private int experienceReward = 10;
     [SerializeField] private int goldReward = 5;
     [SerializeField] private float detectionRange = 5f;
@@ -33,6 +35,7 @@ public class EnemyCharacter : Character
     
     // 프로퍼티
     public EnemyType Type => enemyType;
+    public int Level => enemyLevel;
     public int ExperienceReward => experienceReward;
     public int GoldReward => goldReward;
     public EnemyState CurrentState => currentState;
@@ -187,7 +190,7 @@ public class EnemyCharacter : Character
     /// </summary>
     private void SetNewPatrolTarget()
     {
-        Vector3 randomDirection = Random.insideUnitSphere * patrolRange;
+        Vector3 randomDirection = UnityEngine.Random.insideUnitSphere * patrolRange;
         randomDirection.y = 0; // Y축은 고정
         patrolTarget = patrolCenter.position + randomDirection;
     }
@@ -214,6 +217,18 @@ public class EnemyCharacter : Character
         base.Die();
         OnEnemyDied?.Invoke(this);
         
+        // 적 죽음 상세 로깅
+        if (GameLogManager.Instance != null)
+        {
+            GameLogManager.Instance.LogPlayerAction(
+                "EnemyDied", 
+                $"{enemyType}_{gameObject.name}", 
+                transform.position, 
+                experienceReward, 
+                $"Enemy {enemyType} (Level {enemyLevel}) died - Reward: {experienceReward} EXP, {goldReward} Gold"
+            );
+        }
+        
         // 플레이어에게 보상 지급
         if (player != null)
         {
@@ -238,6 +253,7 @@ public class EnemyCharacter : Character
         switch (type)
         {
             case EnemyType.Weak:
+                enemyLevel = 1;
                 SetMaxHP(50);
                 SetAttackPower(5);
                 SetDefense(1);
@@ -245,6 +261,7 @@ public class EnemyCharacter : Character
                 goldReward = 2;
                 break;
             case EnemyType.Normal:
+                enemyLevel = 2;
                 SetMaxHP(100);
                 SetAttackPower(10);
                 SetDefense(3);
@@ -252,18 +269,44 @@ public class EnemyCharacter : Character
                 goldReward = 5;
                 break;
             case EnemyType.Strong:
+                enemyLevel = 3;
                 SetMaxHP(200);
                 SetAttackPower(20);
                 SetDefense(8);
                 experienceReward = 25;
                 goldReward = 15;
                 break;
+            case EnemyType.Elite:
+                enemyLevel = 4;
+                SetMaxHP(300);
+                SetAttackPower(25);
+                SetDefense(10);
+                experienceReward = 40;
+                goldReward = 25;
+                break;
+            case EnemyType.Champion:
+                enemyLevel = 5;
+                SetMaxHP(400);
+                SetAttackPower(30);
+                SetDefense(12);
+                experienceReward = 60;
+                goldReward = 35;
+                break;
+            case EnemyType.Mythic:
+                enemyLevel = 6;
+                SetMaxHP(600);
+                SetAttackPower(40);
+                SetDefense(18);
+                experienceReward = 80;
+                goldReward = 45;
+                break;
             case EnemyType.Boss:
+                enemyLevel = 7;
                 SetMaxHP(500);
-                SetAttackPower(35);
-                SetDefense(15);
-                experienceReward = 100;
-                goldReward = 50;
+                SetAttackPower(1);
+                SetDefense(25);
+                experienceReward = 150;
+                goldReward = 75;
                 break;
         }
     }
@@ -295,6 +338,9 @@ public enum EnemyType
     Weak,   // 약한 적
     Normal, // 일반 적
     Strong, // 강한 적
+    Elite,
+    Champion,
+    Mythic,
     Boss    // 보스
 }
 

@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 
 /// <summary>
 /// 플레이어 캐릭터 클래스
@@ -44,6 +45,12 @@ public class PlayerCharacter : Character
     {
         experience += amount;
         OnExperienceChanged?.Invoke(experience, experienceToNextLevel);
+        
+        // 로깅
+        if (GameLogManager.Instance != null)
+        {
+            GameLogManager.Instance.LogPlayerAction("ExperienceGain", "Self", transform.position, amount, $"Total: {experience}");
+        }
         
         // 레벨업 체크
         while (experience >= experienceToNextLevel)
@@ -103,6 +110,12 @@ public class PlayerCharacter : Character
         skillPoints--;
         OnSkillPointsChanged?.Invoke(skillPoints);
         
+        // 로깅
+        if (GameLogManager.Instance != null)
+        {
+            GameLogManager.Instance.LogPlayerAction("SkillUpgrade", skillType.ToString(), transform.position, GetSkillLevel(skillType), $"Remaining Points: {skillPoints}");
+        }
+        
         Debug.Log($"{skillType} 스킬이 업그레이드되었습니다.");
         return true;
     }
@@ -116,6 +129,12 @@ public class PlayerCharacter : Character
         
         int healAmount = 20 + (healingSkill * 10);
         Heal(healAmount);
+        
+        // 로깅
+        if (GameLogManager.Instance != null)
+        {
+            GameLogManager.Instance.LogPlayerAction("HealingSkill", "Self", transform.position, healAmount, $"Skill Level: {healingSkill}");
+        }
         
         Debug.Log($"힐링 스킬을 사용하여 {healAmount}만큼 회복했습니다.");
     }
@@ -132,6 +151,7 @@ public class PlayerCharacter : Character
         isAttacking = true;
         
         int baseDamage = attackPower;
+        bool isCritical = false;
         
         // 데미지 부스트 적용
         if (damageBoost > 0)
@@ -141,15 +161,30 @@ public class PlayerCharacter : Character
         
         // 크리티컬 확률 적용
         float critChance = 0.1f + (criticalChance * 0.05f); // 기본 10% + 스킬당 5%
-        if (Random.Range(0f, 1f) < critChance)
+        if (UnityEngine.Random.Range(0f, 1f) < critChance)
         {
             baseDamage = Mathf.RoundToInt(baseDamage * 2f);
+            isCritical = true;
             Debug.Log("크리티컬 히트!");
         }
         
         // 방어력만큼 피해 감소 (최소 1의 피해는 보장)
         int finalDamage = Mathf.Max(1, baseDamage - target.Defense);
         target.TakeDamage(finalDamage);
+        
+        // 전투 로깅
+        if (GameLogManager.Instance != null)
+        {
+            GameLogManager.Instance.LogCombatEvent(
+                gameObject.name, 
+                target.name, 
+                finalDamage, 
+                isCritical, 
+                currentHP, 
+                target.CurrentHP, 
+                isCritical ? "Critical" : "Hit"
+            );
+        }
         
         Debug.Log($"{gameObject.name}이(가) {target.name}에게 {finalDamage}의 피해를 입혔습니다.");
         
@@ -183,6 +218,26 @@ public class PlayerCharacter : Character
                 return damageBoost;
             default:
                 return 0;
+        }
+    }
+
+    /// <summary>
+    /// 죽었을 때 호출됩니다
+    /// </summary>
+    protected override void Die()
+    {
+        base.Die();
+        // 죽음 로깅
+        if (GameLogManager.Instance != null)
+        {
+            string characterType = this is PlayerCharacter ? "Player" : "Enemy";
+            GameLogManager.Instance.LogPlayerAction(
+                "CharacterDied", 
+                gameObject.name, 
+                transform.position, 
+                0, 
+                $"{characterType} died - HP: {currentHP}/{maxHP}"
+            );
         }
     }
 }

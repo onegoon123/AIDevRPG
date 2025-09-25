@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2679910140506441641}
   - component: {fileID: 3635901299061684609}
   m_Layer: 0
-  m_Name: WeakEnemy
+  m_Name: EliteEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100,10 +100,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2708a4d7ebee9e74ea93b61632c82321, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 5
+  maxHP: 25
   currentHP: 0
-  attackPower: 10
-  defense: 0
+  attackPower: 15
+  defense: 5
   characterAttackRange: 1.5
   characterMoveSpeed: 3
   characterAttackCooldown: 1
@@ -112,7 +112,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   isAlive: 1
   isAttacking: 0
-  enemyType: 0
+  enemyType: 3
   enemyLevel: 1
   experienceReward: 10
   goldReward: 5

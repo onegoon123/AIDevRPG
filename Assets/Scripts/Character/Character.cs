@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 
 /// <summary>
 /// 캐릭터의 기본 클래스
@@ -204,6 +205,20 @@ public class Character : MonoBehaviour
         int damage = CalculateDamage(target);
         target.TakeDamage(damage);
         
+        // 전투 로깅 (PlayerCharacter가 아닌 경우에만)
+        if (GameLogManager.Instance != null && !(this is PlayerCharacter))
+        {
+            GameLogManager.Instance.LogCombatEvent(
+                gameObject.name, 
+                target.name, 
+                damage, 
+                false, // 기본 Character는 크리티컬 없음
+                currentHP, 
+                target.CurrentHP, 
+                "Hit"
+            );
+        }
+        
         Debug.Log($"{gameObject.name}이(가) {target.gameObject.name}에게 {damage}의 피해를 입혔습니다.");
         
         // 공격 상태 해제 (애니메이션 완료 후)
@@ -223,7 +238,7 @@ public class Character : MonoBehaviour
         int finalDamage = Mathf.Max(1, baseDamage - target.Defense);
         
         // 크리티컬 히트 확률 (10%)
-        if (Random.Range(0f, 1f) < 0.1f)
+        if (UnityEngine.Random.Range(0f, 1f) < 0.1f)
         {
             finalDamage = Mathf.RoundToInt(finalDamage * 1.5f);
             Debug.Log("크리티컬 히트!");
@@ -248,7 +263,7 @@ public class Character : MonoBehaviour
     {
         isAlive = false;
         OnCharacterDied?.Invoke();
-        Debug.Log($"{gameObject.name}이(가) 죽었습니다.");
+        gameObject.SetActive(false);
     }
     
     /// <summary>

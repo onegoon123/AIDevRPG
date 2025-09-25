@@ -100,9 +100,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2708a4d7ebee9e74ea93b61632c82321, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 5
+  maxHP: 100
   currentHP: 0
-  attackPower: 10
+  attackPower: 1
   defense: 5
   characterAttackRange: 1.5
   characterMoveSpeed: 3
@@ -112,7 +112,8 @@ MonoBehaviour:
     m_Bits: 4294967295
   isAlive: 1
   isAttacking: 0
-  enemyType: 3
+  enemyType: 6
+  enemyLevel: 1
   experienceReward: 10
   goldReward: 5
   detectionRange: 5

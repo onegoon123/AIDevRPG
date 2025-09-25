@@ -167,6 +167,13 @@ public class EnemySpawner : MonoBehaviour
                     break;
                 }
                 
+                // 스폰당 최대 적 수 제한 확인
+                if (spawnedEnemies.Count >= maxEnemiesPerSpawn)
+                {
+                    Debug.LogWarning($"스폰당 최대 적 수({maxEnemiesPerSpawn})에 도달했습니다.");
+                    break;
+                }
+                
                 // 적 스폰
                 SpawnEnemy(data.enemyType, data.spawnPosition, data.isBoss);
                 if (remainingToSpawn > 0) remainingToSpawn--;

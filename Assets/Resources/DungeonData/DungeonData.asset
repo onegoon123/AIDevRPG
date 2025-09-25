@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73a8eb28d4cc0d34983599699da22d9c, type: 3}
   m_Name: DungeonData
   m_EditorClassIdentifier: 
-  dungeonName: "\uB358\uC804A"
+  dungeonName: "CSV \uB358\uC804"
   dungeonDescription: 
   dungeonIcon: {fileID: 0}
-  totalFloors: 10
+  totalFloors: 100
   isInfinite: 0
   difficultyMultiplier: 1
   floorData:
@@ -24,12 +24,12 @@ MonoBehaviour:
     floorDescription: "\uCD08\uBCF4\uC790\uB97C \uC704\uD55C \uC548\uC804\uD55C \uB3D9\uAD74"
     enemySpawns:
     - enemyType: 0
-      spawnCount: 3
+      spawnCount: 10
       spawnPosition: {x: 0, y: 0}
       spawnDelay: 0.5
       isBoss: 0
     - enemyType: 0
-      spawnCount: 2
+      spawnCount: 10
       spawnPosition: {x: 2, y: 1}
       spawnDelay: 1
       isBoss: 0
@@ -51,12 +51,12 @@ MonoBehaviour:
       \uACF3"
     enemySpawns:
     - enemyType: 1
-      spawnCount: 2
+      spawnCount: 15
       spawnPosition: {x: -1, y: 1}
       spawnDelay: 0.8
       isBoss: 0
     - enemyType: 2
-      spawnCount: 1
+      spawnCount: 15
       spawnPosition: {x: 3, y: 2}
       spawnDelay: 1.5
       isBoss: 0
@@ -74,7 +74,7 @@ MonoBehaviour:
     floorDescription: "\uAC15\uB825\uD55C \uC624\uD06C\uB4E4\uC774 \uC9C0\uD0A4\uB294
       \uC694\uC0C8"
     enemySpawns:
-    - enemyType: 3
+    - enemyType: 6
       spawnCount: 1
       spawnPosition: {x: 0, y: 0}
       spawnDelay: 0
@@ -88,6 +88,2078 @@ MonoBehaviour:
     floorClearTime: 0
     isBossFloor: 1
     bossName: "\uC624\uD06C \uB300\uC7A5"
+  - floorNumber: 4
+    floorName: "\uACE0\uBE14\uB9B0 \uB3D9\uAD74"
+    floorDescription: "\uACE0\uBE14\uB9B0 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uB3D9\uAD74."
+    enemySpawns:
+    - enemyType: 1
+      spawnCount: 8
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 0.5
+      isBoss: 0
+    - enemyType: 0
+      spawnCount: 7
+      spawnPosition: {x: -2, y: 0}
+      spawnDelay: 1.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 5
+    floorName: "\uACE0\uBE14\uB9B0 \uC18C\uAD74"
+    floorDescription: "\uACE0\uBE14\uB9B0 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uC18C\uAD74."
+    enemySpawns:
+    - enemyType: 1
+      spawnCount: 9
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 0.8
+      isBoss: 0
+    - enemyType: 0
+      spawnCount: 8
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 0.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 6
+    floorName: "\uACE0\uBE14\uB9B0 \uB3D9\uAD74"
+    floorDescription: "\uACE0\uBE14\uB9B0 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uB3D9\uAD74."
+    enemySpawns:
+    - enemyType: 1
+      spawnCount: 9
+      spawnPosition: {x: 2, y: 1}
+      spawnDelay: 1
+      isBoss: 0
+    - enemyType: 1
+      spawnCount: 9
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 1.2
+      isBoss: 0
+    - enemyType: 0
+      spawnCount: 8
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 0.8
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 7
+    floorName: "\uACE0\uBE14\uB9B0 \uD1B5\uB85C"
+    floorDescription: "\uACE0\uBE14\uB9B0 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uD1B5\uB85C."
+    enemySpawns:
+    - enemyType: 1
+      spawnCount: 9
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 1.2
+      isBoss: 0
+    - enemyType: 0
+      spawnCount: 8
+      spawnPosition: {x: 2, y: 1}
+      spawnDelay: 1
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 8
+    floorName: "\uACE0\uBE14\uB9B0 \uB3D9\uAD74"
+    floorDescription: "\uACE0\uBE14\uB9B0 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uB3D9\uAD74."
+    enemySpawns:
+    - enemyType: 1
+      spawnCount: 10
+      spawnPosition: {x: 3, y: 2}
+      spawnDelay: 1.5
+      isBoss: 0
+    - enemyType: 0
+      spawnCount: 9
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 1.2
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 9
+    floorName: "\uACE0\uBE14\uB9B0 \uC18C\uAD74"
+    floorDescription: "\uACE0\uBE14\uB9B0 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uC18C\uAD74."
+    enemySpawns:
+    - enemyType: 1
+      spawnCount: 10
+      spawnPosition: {x: -2, y: 0}
+      spawnDelay: 0.5
+      isBoss: 0
+    - enemyType: 1
+      spawnCount: 10
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 0.8
+      isBoss: 0
+    - enemyType: 0
+      spawnCount: 9
+      spawnPosition: {x: 3, y: 2}
+      spawnDelay: 1.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 10
+    floorName: "\uACE0\uBE14\uB9B0 \uC9C0\uD558\uD640"
+    floorDescription: "\uACE0\uBE14\uB9B0 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uC9C0\uD558\uD640."
+    enemySpawns:
+    - enemyType: 6
+      spawnCount: 1
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 0
+      isBoss: 1
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 1
+    bossName: "\uACE0\uBE14\uB9B0 \uB300\uC7A5"
+  - floorNumber: 11
+    floorName: "\uC2A4\uCF08\uB808\uD1A4 \uBB18\uC9C0"
+    floorDescription: "\uC2A4\uCF08\uB808\uD1A4 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uBB18\uC9C0."
+    enemySpawns:
+    - enemyType: 1
+      spawnCount: 11
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 0.8
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 12
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 1
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 12
+    floorName: "\uC2A4\uCF08\uB808\uD1A4 \uB0A9\uACE8\uB2F9"
+    floorDescription: "\uC2A4\uCF08\uB808\uD1A4 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uB0A9\uACE8\uB2F9."
+    enemySpawns:
+    - enemyType: 1
+      spawnCount: 11
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 1
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 12
+      spawnPosition: {x: 2, y: 1}
+      spawnDelay: 1.2
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 12
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 1.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 13
+    floorName: "\uC2A4\uCF08\uB808\uD1A4 \uB0A9\uACE8\uB2F9"
+    floorDescription: "\uC2A4\uCF08\uB808\uD1A4 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uB0A9\uACE8\uB2F9."
+    enemySpawns:
+    - enemyType: 1
+      spawnCount: 12
+      spawnPosition: {x: 2, y: 1}
+      spawnDelay: 1.2
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 13
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 1.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 14
+    floorName: "\uC2A4\uCF08\uB808\uD1A4 \uBB18\uC9C0"
+    floorDescription: "\uC2A4\uCF08\uB808\uD1A4 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uBB18\uC9C0."
+    enemySpawns:
+    - enemyType: 1
+      spawnCount: 12
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 1.5
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 13
+      spawnPosition: {x: 3, y: 2}
+      spawnDelay: 0.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 15
+    floorName: "\uC2A4\uCF08\uB808\uD1A4 \uC9C0\uD558\uC2E4"
+    floorDescription: "\uC2A4\uCF08\uB808\uD1A4 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uC9C0\uD558\uC2E4."
+    enemySpawns:
+    - enemyType: 1
+      spawnCount: 13
+      spawnPosition: {x: 3, y: 2}
+      spawnDelay: 0.5
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 14
+      spawnPosition: {x: -2, y: 0}
+      spawnDelay: 0.8
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 14
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 1
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 16
+    floorName: "\uC2A4\uCF08\uB808\uD1A4 \uBB18\uC9C0"
+    floorDescription: "\uC2A4\uCF08\uB808\uD1A4 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uBB18\uC9C0."
+    enemySpawns:
+    - enemyType: 1
+      spawnCount: 13
+      spawnPosition: {x: -2, y: 0}
+      spawnDelay: 0.8
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 14
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 1
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 17
+    floorName: "\uC2A4\uCF08\uB808\uD1A4 \uC9C0\uD558\uC2E4"
+    floorDescription: "\uC2A4\uCF08\uB808\uD1A4 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uC9C0\uD558\uC2E4."
+    enemySpawns:
+    - enemyType: 1
+      spawnCount: 13
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 1
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 14
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 1.2
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 18
+    floorName: "\uC2A4\uCF08\uB808\uD1A4 \uC0AC\uC81C\uC804\uB2F9"
+    floorDescription: "\uC2A4\uCF08\uB808\uD1A4 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uC0AC\uC81C\uC804\uB2F9."
+    enemySpawns:
+    - enemyType: 1
+      spawnCount: 14
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 1.2
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 16
+      spawnPosition: {x: 2, y: 1}
+      spawnDelay: 1.5
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 16
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 0.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 19
+    floorName: "\uC2A4\uCF08\uB808\uD1A4 \uC9C0\uD558\uC2E4"
+    floorDescription: "\uC2A4\uCF08\uB808\uD1A4 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uC9C0\uD558\uC2E4."
+    enemySpawns:
+    - enemyType: 1
+      spawnCount: 14
+      spawnPosition: {x: 2, y: 1}
+      spawnDelay: 1.5
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 16
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 0.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 20
+    floorName: "\uC2A4\uCF08\uB808\uD1A4 \uC0AC\uC81C\uC804\uB2F9"
+    floorDescription: "\uC2A4\uCF08\uB808\uD1A4 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uC0AC\uC81C\uC804\uB2F9."
+    enemySpawns:
+    - enemyType: 6
+      spawnCount: 1
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 0
+      isBoss: 1
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 1
+    bossName: "\uC2A4\uCF08\uB808\uD1A4 \uB300\uC7A5"
+  - floorNumber: 21
+    floorName: "\uC0B0\uC801 \uD611\uACE1"
+    floorDescription: "\uC0B0\uC801 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uD611\uACE1."
+    enemySpawns:
+    - enemyType: 1
+      spawnCount: 15
+      spawnPosition: {x: 3, y: 2}
+      spawnDelay: 0.8
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 17
+      spawnPosition: {x: -2, y: 0}
+      spawnDelay: 1
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 17
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 1.2
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 22
+    floorName: "\uC0B0\uC801 \uC57C\uC601\uC9C0"
+    floorDescription: "\uC0B0\uC801 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC57C\uC601\uC9C0."
+    enemySpawns:
+    - enemyType: 1
+      spawnCount: 15
+      spawnPosition: {x: -2, y: 0}
+      spawnDelay: 1
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 17
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 1.2
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 23
+    floorName: "\uC0B0\uC801 \uC740\uC2E0\uCC98"
+    floorDescription: "\uC0B0\uC801 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC740\uC2E0\uCC98."
+    enemySpawns:
+    - enemyType: 1
+      spawnCount: 16
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 1.2
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 18
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 1.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 24
+    floorName: "\uC0B0\uC801 \uC740\uC2E0\uCC98"
+    floorDescription: "\uC0B0\uC801 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC740\uC2E0\uCC98."
+    enemySpawns:
+    - enemyType: 1
+      spawnCount: 16
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 1.5
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 18
+      spawnPosition: {x: 2, y: 1}
+      spawnDelay: 0.5
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 18
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 0.8
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 25
+    floorName: "\uC0B0\uC801 \uC694\uC0C8"
+    floorDescription: "\uC0B0\uC801 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC694\uC0C8."
+    enemySpawns:
+    - enemyType: 1
+      spawnCount: 18
+      spawnPosition: {x: 2, y: 1}
+      spawnDelay: 0.5
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 19
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 0.8
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 26
+    floorName: "\uC0B0\uC801 \uC740\uC2E0\uCC98"
+    floorDescription: "\uC0B0\uC801 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC740\uC2E0\uCC98."
+    enemySpawns:
+    - enemyType: 1
+      spawnCount: 18
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 0.8
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 19
+      spawnPosition: {x: 3, y: 2}
+      spawnDelay: 1
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 27
+    floorName: "\uC0B0\uC801 \uC694\uC0C8"
+    floorDescription: "\uC0B0\uC801 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC694\uC0C8."
+    enemySpawns:
+    - enemyType: 1
+      spawnCount: 18
+      spawnPosition: {x: 3, y: 2}
+      spawnDelay: 1
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 19
+      spawnPosition: {x: -2, y: 0}
+      spawnDelay: 1.2
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 19
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 1.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 28
+    floorName: "\uC0B0\uC801 \uC57C\uC601\uC9C0"
+    floorDescription: "\uC0B0\uC801 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC57C\uC601\uC9C0."
+    enemySpawns:
+    - enemyType: 1
+      spawnCount: 19
+      spawnPosition: {x: -2, y: 0}
+      spawnDelay: 1.2
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 20
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 1.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 29
+    floorName: "\uC0B0\uC801 \uC694\uC0C8"
+    floorDescription: "\uC0B0\uC801 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC694\uC0C8."
+    enemySpawns:
+    - enemyType: 1
+      spawnCount: 19
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 1.5
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 20
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 0.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 30
+    floorName: "\uC0B0\uC801 \uC740\uC2E0\uCC98"
+    floorDescription: "\uC0B0\uC801 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC740\uC2E0\uCC98."
+    enemySpawns:
+    - enemyType: 6
+      spawnCount: 1
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 0
+      isBoss: 1
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 1
+    bossName: "\uC0B0\uC801 \uB300\uC7A5"
+  - floorNumber: 31
+    floorName: "\uC5B8\uB370\uB4DC \uC9C0\uD558\uD638\uC218"
+    floorDescription: "\uC5B8\uB370\uB4DC \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uC9C0\uD558\uD638\uC218."
+    enemySpawns:
+    - enemyType: 3
+      spawnCount: 23
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 1
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 22
+      spawnPosition: {x: 2, y: 1}
+      spawnDelay: 0.8
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 32
+    floorName: "\uC5B8\uB370\uB4DC \uC9C0\uD558\uD638\uC218"
+    floorDescription: "\uC5B8\uB370\uB4DC \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uC9C0\uD558\uD638\uC218."
+    enemySpawns:
+    - enemyType: 3
+      spawnCount: 23
+      spawnPosition: {x: 3, y: 2}
+      spawnDelay: 1.2
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 22
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 1
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 33
+    floorName: "\uC5B8\uB370\uB4DC \uD3D0\uD5C8"
+    floorDescription: "\uC5B8\uB370\uB4DC \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uD3D0\uD5C8."
+    enemySpawns:
+    - enemyType: 3
+      spawnCount: 25
+      spawnPosition: {x: -2, y: 0}
+      spawnDelay: 1.5
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 25
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 0.5
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 23
+      spawnPosition: {x: 3, y: 2}
+      spawnDelay: 1.2
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 34
+    floorName: "\uC5B8\uB370\uB4DC \uC9C0\uD558\uD638\uC218"
+    floorDescription: "\uC5B8\uB370\uB4DC \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uC9C0\uD558\uD638\uC218."
+    enemySpawns:
+    - enemyType: 3
+      spawnCount: 25
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 0.5
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 23
+      spawnPosition: {x: -2, y: 0}
+      spawnDelay: 1.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 35
+    floorName: "\uC5B8\uB370\uB4DC \uD3D0\uD5C8"
+    floorDescription: "\uC5B8\uB370\uB4DC \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uD3D0\uD5C8."
+    enemySpawns:
+    - enemyType: 3
+      spawnCount: 26
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 0.8
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 24
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 0.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 36
+    floorName: "\uC5B8\uB370\uB4DC \uC9C0\uD558\uD638\uC218"
+    floorDescription: "\uC5B8\uB370\uB4DC \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uC9C0\uD558\uD638\uC218."
+    enemySpawns:
+    - enemyType: 3
+      spawnCount: 26
+      spawnPosition: {x: 2, y: 1}
+      spawnDelay: 1
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 26
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 1.2
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 24
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 0.8
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 37
+    floorName: "\uC5B8\uB370\uB4DC \uC800\uC218\uC9C0"
+    floorDescription: "\uC5B8\uB370\uB4DC \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uC800\uC218\uC9C0."
+    enemySpawns:
+    - enemyType: 3
+      spawnCount: 26
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 1.2
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 24
+      spawnPosition: {x: 2, y: 1}
+      spawnDelay: 1
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 38
+    floorName: "\uC5B8\uB370\uB4DC \uC9C0\uD558\uD638\uC218"
+    floorDescription: "\uC5B8\uB370\uB4DC \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uC9C0\uD558\uD638\uC218."
+    enemySpawns:
+    - enemyType: 3
+      spawnCount: 27
+      spawnPosition: {x: 3, y: 2}
+      spawnDelay: 1.5
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 25
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 1.2
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 39
+    floorName: "\uC5B8\uB370\uB4DC \uC800\uC218\uC9C0"
+    floorDescription: "\uC5B8\uB370\uB4DC \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uC800\uC218\uC9C0."
+    enemySpawns:
+    - enemyType: 3
+      spawnCount: 27
+      spawnPosition: {x: -2, y: 0}
+      spawnDelay: 0.5
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 27
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 0.8
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 25
+      spawnPosition: {x: 3, y: 2}
+      spawnDelay: 1.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 40
+    floorName: "\uC5B8\uB370\uB4DC \uC800\uC218\uC9C0"
+    floorDescription: "\uC5B8\uB370\uB4DC \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uC800\uC218\uC9C0."
+    enemySpawns:
+    - enemyType: 6
+      spawnCount: 1
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 0
+      isBoss: 1
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 1
+    bossName: "\uC5B8\uB370\uB4DC \uB300\uC7A5"
+  - floorNumber: 41
+    floorName: "\uC0AC\uB9C9 \uD611\uACE1"
+    floorDescription: "\uC0AC\uB9C9 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uD611\uACE1."
+    enemySpawns:
+    - enemyType: 3
+      spawnCount: 29
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 1
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 26
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 0.8
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 42
+    floorName: "\uC0AC\uB9C9 \uC0AC\uAD6C"
+    floorDescription: "\uC0AC\uB9C9 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC0AC\uAD6C."
+    enemySpawns:
+    - enemyType: 3
+      spawnCount: 29
+      spawnPosition: {x: 2, y: 1}
+      spawnDelay: 1.2
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 29
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 1.5
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 26
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 1
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 43
+    floorName: "\uC0AC\uB9C9 \uC624\uC544\uC2DC\uC2A4"
+    floorDescription: "\uC0AC\uB9C9 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC624\uC544\uC2DC\uC2A4."
+    enemySpawns:
+    - enemyType: 3
+      spawnCount: 30
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 1.5
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 28
+      spawnPosition: {x: 2, y: 1}
+      spawnDelay: 1.2
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 44
+    floorName: "\uC0AC\uB9C9 \uC624\uC544\uC2DC\uC2A4"
+    floorDescription: "\uC0AC\uB9C9 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC624\uC544\uC2DC\uC2A4."
+    enemySpawns:
+    - enemyType: 3
+      spawnCount: 30
+      spawnPosition: {x: 3, y: 2}
+      spawnDelay: 0.5
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 28
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 1.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 45
+    floorName: "\uC0AC\uB9C9 \uD3D0\uC0AC\uC6D0"
+    floorDescription: "\uC0AC\uB9C9 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uD3D0\uC0AC\uC6D0."
+    enemySpawns:
+    - enemyType: 3
+      spawnCount: 31
+      spawnPosition: {x: -2, y: 0}
+      spawnDelay: 0.8
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 31
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 1
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 29
+      spawnPosition: {x: 3, y: 2}
+      spawnDelay: 0.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 46
+    floorName: "\uC0AC\uB9C9 \uC624\uC544\uC2DC\uC2A4"
+    floorDescription: "\uC0AC\uB9C9 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC624\uC544\uC2DC\uC2A4."
+    enemySpawns:
+    - enemyType: 3
+      spawnCount: 31
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 1
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 29
+      spawnPosition: {x: -2, y: 0}
+      spawnDelay: 0.8
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 47
+    floorName: "\uC0AC\uB9C9 \uD611\uACE1"
+    floorDescription: "\uC0AC\uB9C9 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uD611\uACE1."
+    enemySpawns:
+    - enemyType: 3
+      spawnCount: 31
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 1.2
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 29
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 1
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 48
+    floorName: "\uC0AC\uB9C9 \uC0AC\uAD6C"
+    floorDescription: "\uC0AC\uB9C9 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC0AC\uAD6C."
+    enemySpawns:
+    - enemyType: 3
+      spawnCount: 32
+      spawnPosition: {x: 2, y: 1}
+      spawnDelay: 1.5
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 32
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 0.5
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 30
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 1.2
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 49
+    floorName: "\uC0AC\uB9C9 \uC624\uC544\uC2DC\uC2A4"
+    floorDescription: "\uC0AC\uB9C9 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC624\uC544\uC2DC\uC2A4."
+    enemySpawns:
+    - enemyType: 3
+      spawnCount: 32
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 0.5
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 30
+      spawnPosition: {x: 2, y: 1}
+      spawnDelay: 1.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 50
+    floorName: "\uC0AC\uB9C9 \uD611\uACE1"
+    floorDescription: "\uC0AC\uB9C9 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uD611\uACE1."
+    enemySpawns:
+    - enemyType: 6
+      spawnCount: 1
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 0
+      isBoss: 1
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 1
+    bossName: "\uC0AC\uB9C9 \uB300\uC7A5"
+  - floorNumber: 51
+    floorName: "\uC6A9\uC554 \uC6A9\uC554\uB3D9\uAD74"
+    floorDescription: "\uC6A9\uC554 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC6A9\uC554\uB3D9\uAD74."
+    enemySpawns:
+    - enemyType: 3
+      spawnCount: 34
+      spawnPosition: {x: -2, y: 0}
+      spawnDelay: 1
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 34
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 1.2
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 31
+      spawnPosition: {x: 3, y: 2}
+      spawnDelay: 0.8
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 52
+    floorName: "\uC6A9\uC554 \uC6A9\uC554\uAC15"
+    floorDescription: "\uC6A9\uC554 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC6A9\uC554\uAC15."
+    enemySpawns:
+    - enemyType: 3
+      spawnCount: 34
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 1.2
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 31
+      spawnPosition: {x: -2, y: 0}
+      spawnDelay: 1
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 53
+    floorName: "\uC6A9\uC554 \uC6A9\uC554\uAC15"
+    floorDescription: "\uC6A9\uC554 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC6A9\uC554\uAC15."
+    enemySpawns:
+    - enemyType: 3
+      spawnCount: 35
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 1.5
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 32
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 1.2
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 54
+    floorName: "\uC6A9\uC554 \uBD84\uD654\uAD6C"
+    floorDescription: "\uC6A9\uC554 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uBD84\uD654\uAD6C."
+    enemySpawns:
+    - enemyType: 3
+      spawnCount: 35
+      spawnPosition: {x: 2, y: 1}
+      spawnDelay: 0.5
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 35
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 0.8
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 32
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 1.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 55
+    floorName: "\uC6A9\uC554 \uB2E8\uCE35"
+    floorDescription: "\uC6A9\uC554 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uB2E8\uCE35."
+    enemySpawns:
+    - enemyType: 3
+      spawnCount: 36
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 0.8
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 34
+      spawnPosition: {x: 2, y: 1}
+      spawnDelay: 0.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 56
+    floorName: "\uC6A9\uC554 \uB2E8\uCE35"
+    floorDescription: "\uC6A9\uC554 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uB2E8\uCE35."
+    enemySpawns:
+    - enemyType: 3
+      spawnCount: 36
+      spawnPosition: {x: 3, y: 2}
+      spawnDelay: 1
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 34
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 0.8
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 57
+    floorName: "\uC6A9\uC554 \uB2E8\uCE35"
+    floorDescription: "\uC6A9\uC554 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uB2E8\uCE35."
+    enemySpawns:
+    - enemyType: 3
+      spawnCount: 36
+      spawnPosition: {x: -2, y: 0}
+      spawnDelay: 1.2
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 36
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 1.5
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 34
+      spawnPosition: {x: 3, y: 2}
+      spawnDelay: 1
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 58
+    floorName: "\uC6A9\uC554 \uC6A9\uC554\uB3D9\uAD74"
+    floorDescription: "\uC6A9\uC554 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC6A9\uC554\uB3D9\uAD74."
+    enemySpawns:
+    - enemyType: 3
+      spawnCount: 38
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 1.5
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 35
+      spawnPosition: {x: -2, y: 0}
+      spawnDelay: 1.2
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 59
+    floorName: "\uC6A9\uC554 \uBD84\uD654\uAD6C"
+    floorDescription: "\uC6A9\uC554 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uBD84\uD654\uAD6C."
+    enemySpawns:
+    - enemyType: 3
+      spawnCount: 38
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 0.5
+      isBoss: 0
+    - enemyType: 2
+      spawnCount: 35
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 1.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 60
+    floorName: "\uC6A9\uC554 \uBD84\uD654\uAD6C"
+    floorDescription: "\uC6A9\uC554 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uBD84\uD654\uAD6C."
+    enemySpawns:
+    - enemyType: 6
+      spawnCount: 1
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 0
+      isBoss: 1
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 1
+    bossName: "\uC6A9\uC554 \uB300\uC7A5"
+  - floorNumber: 61
+    floorName: "\uBE59\uC124 \uBE59\uB3D9"
+    floorDescription: "\uBE59\uC124 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uBE59\uB3D9."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 42
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 1
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 39
+      spawnPosition: {x: 2, y: 1}
+      spawnDelay: 0.8
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 62
+    floorName: "\uBE59\uC124 \uBE59\uD558\uD611\uACE1"
+    floorDescription: "\uBE59\uC124 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uBE59\uD558\uD611\uACE1."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 42
+      spawnPosition: {x: 3, y: 2}
+      spawnDelay: 1.2
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 39
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 1
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 63
+    floorName: "\uBE59\uC124 \uBE59\uB3D9"
+    floorDescription: "\uBE59\uC124 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uBE59\uB3D9."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 43
+      spawnPosition: {x: -2, y: 0}
+      spawnDelay: 1.5
+      isBoss: 0
+    - enemyType: 4
+      spawnCount: 43
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 0.5
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 40
+      spawnPosition: {x: 3, y: 2}
+      spawnDelay: 1.2
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 64
+    floorName: "\uBE59\uC124 \uC124\uC6D0"
+    floorDescription: "\uBE59\uC124 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC124\uC6D0."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 43
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 0.5
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 40
+      spawnPosition: {x: -2, y: 0}
+      spawnDelay: 1.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 65
+    floorName: "\uBE59\uC124 \uBE59\uB3D9"
+    floorDescription: "\uBE59\uC124 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uBE59\uB3D9."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 45
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 0.8
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 42
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 0.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 66
+    floorName: "\uBE59\uC124 \uBE59\uAD81"
+    floorDescription: "\uBE59\uC124 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uBE59\uAD81."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 45
+      spawnPosition: {x: 2, y: 1}
+      spawnDelay: 1
+      isBoss: 0
+    - enemyType: 4
+      spawnCount: 45
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 1.2
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 42
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 0.8
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 67
+    floorName: "\uBE59\uC124 \uBE59\uD558\uD611\uACE1"
+    floorDescription: "\uBE59\uC124 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uBE59\uD558\uD611\uACE1."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 45
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 1.2
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 42
+      spawnPosition: {x: 2, y: 1}
+      spawnDelay: 1
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 68
+    floorName: "\uBE59\uC124 \uBE59\uD558\uD611\uACE1"
+    floorDescription: "\uBE59\uC124 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uBE59\uD558\uD611\uACE1."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 46
+      spawnPosition: {x: 3, y: 2}
+      spawnDelay: 1.5
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 43
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 1.2
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 69
+    floorName: "\uBE59\uC124 \uC124\uC6D0"
+    floorDescription: "\uBE59\uC124 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC124\uC6D0."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 46
+      spawnPosition: {x: -2, y: 0}
+      spawnDelay: 0.5
+      isBoss: 0
+    - enemyType: 4
+      spawnCount: 46
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 0.8
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 43
+      spawnPosition: {x: 3, y: 2}
+      spawnDelay: 1.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 70
+    floorName: "\uBE59\uC124 \uBE59\uD558\uD611\uACE1"
+    floorDescription: "\uBE59\uC124 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uBE59\uD558\uD611\uACE1."
+    enemySpawns:
+    - enemyType: 6
+      spawnCount: 1
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 0
+      isBoss: 1
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 1
+    bossName: "\uBE59\uC124 \uB300\uC7A5"
+  - floorNumber: 71
+    floorName: "\uCC9C\uB465 \uD3ED\uD48D\uB85C"
+    floorDescription: "\uCC9C\uB465 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uD3ED\uD48D\uB85C."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 48
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 1
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 44
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 0.8
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 72
+    floorName: "\uCC9C\uB465 \uD3ED\uD48D\uB85C"
+    floorDescription: "\uCC9C\uB465 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uD3ED\uD48D\uB85C."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 48
+      spawnPosition: {x: 2, y: 1}
+      spawnDelay: 1.2
+      isBoss: 0
+    - enemyType: 4
+      spawnCount: 48
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 1.5
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 44
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 1
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 73
+    floorName: "\uCC9C\uB465 \uC6B0\uB808\uBD09\uC6B0\uB9AC"
+    floorDescription: "\uCC9C\uB465 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC6B0\uB808\uBD09\uC6B0\uB9AC."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 49
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 1.5
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 46
+      spawnPosition: {x: 2, y: 1}
+      spawnDelay: 1.2
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 74
+    floorName: "\uCC9C\uB465 \uB1CC\uC815\uAD74"
+    floorDescription: "\uCC9C\uB465 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uB1CC\uC815\uAD74."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 49
+      spawnPosition: {x: 3, y: 2}
+      spawnDelay: 0.5
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 46
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 1.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 75
+    floorName: "\uCC9C\uB465 \uB1CC\uC815\uAD74"
+    floorDescription: "\uCC9C\uB465 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uB1CC\uC815\uAD74."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 50
+      spawnPosition: {x: -2, y: 0}
+      spawnDelay: 0.8
+      isBoss: 0
+    - enemyType: 4
+      spawnCount: 50
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 1
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 47
+      spawnPosition: {x: 3, y: 2}
+      spawnDelay: 0.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 76
+    floorName: "\uCC9C\uB465 \uC6B0\uB808\uBD09\uC6B0\uB9AC"
+    floorDescription: "\uCC9C\uB465 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC6B0\uB808\uBD09\uC6B0\uB9AC."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 50
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 1
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 47
+      spawnPosition: {x: -2, y: 0}
+      spawnDelay: 0.8
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 77
+    floorName: "\uCC9C\uB465 \uC6B0\uB808\uBD09\uC6B0\uB9AC"
+    floorDescription: "\uCC9C\uB465 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC6B0\uB808\uBD09\uC6B0\uB9AC."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 50
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 1.2
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 47
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 1
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 78
+    floorName: "\uCC9C\uB465 \uC6B0\uB808\uBD09\uC6B0\uB9AC"
+    floorDescription: "\uCC9C\uB465 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC6B0\uB808\uBD09\uC6B0\uB9AC."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 52
+      spawnPosition: {x: 2, y: 1}
+      spawnDelay: 1.5
+      isBoss: 0
+    - enemyType: 4
+      spawnCount: 52
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 0.5
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 48
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 1.2
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 79
+    floorName: "\uCC9C\uB465 \uBC88\uAC1C\uD3C9\uC6D0"
+    floorDescription: "\uCC9C\uB465 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uBC88\uAC1C\uD3C9\uC6D0."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 52
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 0.5
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 48
+      spawnPosition: {x: 2, y: 1}
+      spawnDelay: 1.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 80
+    floorName: "\uCC9C\uB465 \uD3ED\uD48D\uB85C"
+    floorDescription: "\uCC9C\uB465 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uD3ED\uD48D\uB85C."
+    enemySpawns:
+    - enemyType: 6
+      spawnCount: 1
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 0
+      isBoss: 1
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 1
+    bossName: "\uCC9C\uB465 \uB300\uC7A5"
+  - floorNumber: 81
+    floorName: "\uADF8\uB9BC\uC790 \uADF8\uB298\uC232"
+    floorDescription: "\uADF8\uB9BC\uC790 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uADF8\uB298\uC232."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 53
+      spawnPosition: {x: -2, y: 0}
+      spawnDelay: 1
+      isBoss: 0
+    - enemyType: 4
+      spawnCount: 53
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 1.2
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 49
+      spawnPosition: {x: 3, y: 2}
+      spawnDelay: 0.8
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 82
+    floorName: "\uADF8\uB9BC\uC790 \uC554\uC601\uD68C\uB791"
+    floorDescription: "\uADF8\uB9BC\uC790 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uC554\uC601\uD68C\uB791."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 53
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 1.2
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 49
+      spawnPosition: {x: -2, y: 0}
+      spawnDelay: 1
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 83
+    floorName: "\uADF8\uB9BC\uC790 \uC5B4\uB460\uAD11\uC7A5"
+    floorDescription: "\uADF8\uB9BC\uC790 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uC5B4\uB460\uAD11\uC7A5."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 55
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 1.5
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 51
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 1.2
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 84
+    floorName: "\uADF8\uB9BC\uC790 \uC554\uC601\uD68C\uB791"
+    floorDescription: "\uADF8\uB9BC\uC790 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uC554\uC601\uD68C\uB791."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 55
+      spawnPosition: {x: 2, y: 1}
+      spawnDelay: 0.5
+      isBoss: 0
+    - enemyType: 4
+      spawnCount: 55
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 0.8
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 51
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 1.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 85
+    floorName: "\uADF8\uB9BC\uC790 \uC554\uC601\uD68C\uB791"
+    floorDescription: "\uADF8\uB9BC\uC790 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uC554\uC601\uD68C\uB791."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 56
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 0.8
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 52
+      spawnPosition: {x: 2, y: 1}
+      spawnDelay: 0.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 86
+    floorName: "\uADF8\uB9BC\uC790 \uC554\uC601\uD68C\uB791"
+    floorDescription: "\uADF8\uB9BC\uC790 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uC554\uC601\uD68C\uB791."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 56
+      spawnPosition: {x: 3, y: 2}
+      spawnDelay: 1
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 52
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 0.8
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 87
+    floorName: "\uADF8\uB9BC\uC790 \uC554\uC57C\uC131"
+    floorDescription: "\uADF8\uB9BC\uC790 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uC554\uC57C\uC131."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 56
+      spawnPosition: {x: -2, y: 0}
+      spawnDelay: 1.2
+      isBoss: 0
+    - enemyType: 4
+      spawnCount: 56
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 1.5
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 52
+      spawnPosition: {x: 3, y: 2}
+      spawnDelay: 1
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 88
+    floorName: "\uADF8\uB9BC\uC790 \uC554\uC601\uD68C\uB791"
+    floorDescription: "\uADF8\uB9BC\uC790 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uC554\uC601\uD68C\uB791."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 57
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 1.5
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 53
+      spawnPosition: {x: -2, y: 0}
+      spawnDelay: 1.2
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 89
+    floorName: "\uADF8\uB9BC\uC790 \uADF8\uB298\uC232"
+    floorDescription: "\uADF8\uB9BC\uC790 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uADF8\uB298\uC232."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 57
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 0.5
+      isBoss: 0
+    - enemyType: 3
+      spawnCount: 53
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 1.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 90
+    floorName: "\uADF8\uB9BC\uC790 \uC554\uC57C\uC131"
+    floorDescription: "\uADF8\uB9BC\uC790 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294
+      \uC554\uC57C\uC131."
+    enemySpawns:
+    - enemyType: 6
+      spawnCount: 1
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 0
+      isBoss: 1
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 1
+    bossName: "\uADF8\uB9BC\uC790 \uB300\uC7A5"
+  - floorNumber: 91
+    floorName: "\uC6A9 \uC6A9\uC758\uD68C\uB791"
+    floorDescription: "\uC6A9 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC6A9\uC758\uD68C\uB791."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 59
+      spawnPosition: {x: 2, y: 1}
+      spawnDelay: 0.8
+      isBoss: 0
+    - enemyType: 5
+      spawnCount: 63
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 1
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 92
+    floorName: "\uC6A9 \uC6A9\uC758\uAD74"
+    floorDescription: "\uC6A9 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC6A9\uC758\uAD74."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 59
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 1
+      isBoss: 0
+    - enemyType: 5
+      spawnCount: 63
+      spawnPosition: {x: 3, y: 2}
+      spawnDelay: 1.2
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 93
+    floorName: "\uC6A9 \uC6A9\uC758\uAD74"
+    floorDescription: "\uC6A9 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC6A9\uC758\uAD74."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 60
+      spawnPosition: {x: 3, y: 2}
+      spawnDelay: 1.2
+      isBoss: 0
+    - enemyType: 5
+      spawnCount: 64
+      spawnPosition: {x: -2, y: 0}
+      spawnDelay: 1.5
+      isBoss: 0
+    - enemyType: 5
+      spawnCount: 64
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 0.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 94
+    floorName: "\uC6A9 \uC6A9\uC758\uAD74"
+    floorDescription: "\uC6A9 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC6A9\uC758\uAD74."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 60
+      spawnPosition: {x: -2, y: 0}
+      spawnDelay: 1.5
+      isBoss: 0
+    - enemyType: 5
+      spawnCount: 64
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 0.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 95
+    floorName: "\uC6A9 \uC6A9\uC758\uC5B8\uB355"
+    floorDescription: "\uC6A9 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC6A9\uC758\uC5B8\uB355."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 62
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 0.5
+      isBoss: 0
+    - enemyType: 5
+      spawnCount: 66
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 0.8
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 96
+    floorName: "\uC6A9 \uC6A9\uC758\uC5B8\uB355"
+    floorDescription: "\uC6A9 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC6A9\uC758\uC5B8\uB355."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 62
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 0.8
+      isBoss: 0
+    - enemyType: 5
+      spawnCount: 66
+      spawnPosition: {x: 2, y: 1}
+      spawnDelay: 1
+      isBoss: 0
+    - enemyType: 5
+      spawnCount: 66
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 1.2
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 97
+    floorName: "\uC6A9 \uC6A9\uC758\uC2EC\uC7A5"
+    floorDescription: "\uC6A9 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC6A9\uC758\uC2EC\uC7A5."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 62
+      spawnPosition: {x: 2, y: 1}
+      spawnDelay: 1
+      isBoss: 0
+    - enemyType: 5
+      spawnCount: 66
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 1.2
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 98
+    floorName: "\uC6A9 \uC6A9\uC758\uD68C\uB791"
+    floorDescription: "\uC6A9 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC6A9\uC758\uD68C\uB791."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 63
+      spawnPosition: {x: -1, y: 1}
+      spawnDelay: 1.2
+      isBoss: 0
+    - enemyType: 5
+      spawnCount: 68
+      spawnPosition: {x: 3, y: 2}
+      spawnDelay: 1.5
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 99
+    floorName: "\uC6A9 \uC6A9\uC758\uD68C\uB791"
+    floorDescription: "\uC6A9 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC6A9\uC758\uD68C\uB791."
+    enemySpawns:
+    - enemyType: 4
+      spawnCount: 63
+      spawnPosition: {x: 3, y: 2}
+      spawnDelay: 1.5
+      isBoss: 0
+    - enemyType: 5
+      spawnCount: 68
+      spawnPosition: {x: -2, y: 0}
+      spawnDelay: 0.5
+      isBoss: 0
+    - enemyType: 5
+      spawnCount: 68
+      spawnPosition: {x: 1, y: -1}
+      spawnDelay: 0.8
+      isBoss: 0
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 0
+    bossName: 
+  - floorNumber: 100
+    floorName: "\uC6A9 \uC6A9\uC758\uC2EC\uC7A5"
+    floorDescription: "\uC6A9 \uC138\uB825\uC774 \uC9C0\uBC30\uD558\uB294 \uC6A9\uC758\uC2EC\uC7A5."
+    enemySpawns:
+    - enemyType: 6
+      spawnCount: 1
+      spawnPosition: {x: 0, y: 0}
+      spawnDelay: 0
+      isBoss: 1
+    experienceReward: 0
+    goldReward: 0
+    itemRewards: []
+    floorClearTime: 0
+    isBossFloor: 1
+    bossName: "\uC6A9 \uB300\uC7A5"
   baseExperienceReward: 100
   baseGoldReward: 50
   completionRewards: []

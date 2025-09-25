@@ -14,6 +14,11 @@ public class DungeonManager : MonoBehaviour
     [SerializeField] private Transform playerSpawnPoint;
     [SerializeField] private Transform enemySpawnArea;
     
+    [Header("적 스폰 설정")]
+    [SerializeField] private float spawnRadius = 10f; // 스폰 반경
+    [SerializeField] private float minDistanceFromPlayer = 3f; // 플레이어로부터 최소 거리
+    [SerializeField] private int maxSpawnAttempts = 10; // 최대 스폰 시도 횟수
+    
     [Header("UI 설정")]
     [SerializeField] private TextMeshProUGUI floorText;
     [SerializeField] private TextMeshProUGUI enemyCountText;
@@ -160,10 +165,8 @@ public class DungeonManager : MonoBehaviour
             return;
         }
         
-        // 적을 스폰합니다
-        Vector3 spawnPosition = enemySpawnArea != null ? 
-            enemySpawnArea.position + (Vector3)spawnData.spawnPosition : 
-            (Vector3)spawnData.spawnPosition;
+        // 랜덤 스폰 위치 계산
+        Vector3 spawnPosition = GetRandomSpawnPosition();
         
         GameObject enemyObject = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
         EnemyCharacter enemyCharacter = enemyObject.GetComponent<EnemyCharacter>();
@@ -185,7 +188,55 @@ public class DungeonManager : MonoBehaviour
             
             // 적 사망 이벤트 구독
             enemyCharacter.OnEnemyDied += OnEnemyDied;
+            
+            // 적 스폰 로깅
+            if (GameLogManager.Instance != null)
+            {
+                GameLogManager.Instance.LogEnemySpawn(
+                    spawnData.enemyType.ToString(), 
+                    spawnPosition, 
+                    enemyCharacter.Level, 
+                    spawnData.isBoss
+                );
+            }
         }
+    }
+    
+    /// <summary>
+    /// 랜덤한 스폰 위치를 계산합니다
+    /// </summary>
+    /// <returns>랜덤 스폰 위치</returns>
+    private Vector3 GetRandomSpawnPosition()
+    {
+        Vector3 basePosition = enemySpawnArea != null ? enemySpawnArea.position : Vector3.zero;
+        Vector3 playerPosition = playerCharacter != null ? playerCharacter.transform.position : Vector3.zero;
+        
+        for (int attempt = 0; attempt < maxSpawnAttempts; attempt++)
+        {
+            // 랜덤 각도와 거리 계산
+            float randomAngle = Random.Range(0f, 360f) * Mathf.Deg2Rad;
+            float randomDistance = Random.Range(0f, spawnRadius);
+            
+            // 랜덤 위치 계산
+            Vector3 randomOffset = new Vector3(
+                Mathf.Cos(randomAngle) * randomDistance,
+                0f,
+                Mathf.Sin(randomAngle) * randomDistance
+            );
+            
+            Vector3 candidatePosition = basePosition + randomOffset;
+            
+            // 플레이어와의 거리 확인
+            float distanceFromPlayer = Vector3.Distance(candidatePosition, playerPosition);
+            if (distanceFromPlayer >= minDistanceFromPlayer)
+            {
+                return candidatePosition;
+            }
+        }
+        
+        // 최대 시도 횟수에 도달했을 경우 기본 위치 반환
+        Debug.LogWarning("적절한 스폰 위치를 찾지 못했습니다. 기본 위치를 사용합니다.");
+        return basePosition + new Vector3(Random.Range(-spawnRadius, spawnRadius), 0f, Random.Range(-spawnRadius, spawnRadius));
     }
     
     /// <summary>
@@ -217,6 +268,18 @@ public class DungeonManager : MonoBehaviour
                 // 골드 시스템이 있다면 여기서 골드 지급
             }
             
+            // 적 처치 로깅
+            if (GameLogManager.Instance != null)
+            {
+                GameLogManager.Instance.LogPlayerAction(
+                    "EnemyKilled", 
+                    enemy.Type.ToString(), 
+                    enemy.transform.position, 
+                    enemy.ExperienceReward, 
+                    $"Remaining: {spawnedEnemies.Count}"
+                );
+            }
+            
             Debug.Log($"적이 처치되었습니다. 남은 적: {spawnedEnemies.Count}");
         }
     }
@@ -239,6 +302,18 @@ public class DungeonManager : MonoBehaviour
     {
         isFloorCleared = true;
         Debug.Log($"던전 {currentFloor}층 클리어!");
+        
+        // 층 클리어 로깅
+        if (GameLogManager.Instance != null)
+        {
+            GameLogManager.Instance.LogPlayerAction(
+                "FloorCleared", 
+                $"Floor_{currentFloor}", 
+                transform.position, 
+                currentFloor, 
+                $"Floor Name: {currentFloorData.floorName}"
+            );
+        }
         
         // 층 클리어 보상 지급
         GiveFloorRewards();
